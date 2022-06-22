@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hasilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgResult"
+            android:layout_width="421dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Tanaman : "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:scrollbars="vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/TV_nama"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi : "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:scrollbars="vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/TV_deskripsi"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khasiat : "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:scrollbars="vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_khasiat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

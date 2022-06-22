@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:id="@+id/hasil"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hasil Scan"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/imagehasil"/>
+    <ImageView
+        android:id="@+id/imagehasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scangambar"
+        app:layout_constraintTop_toBottomOf="@id/hasil"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/jenis"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jenis"
+        android:background="@drawable/tombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imagehasil"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/khasiat"
+        android:orientation="vertical">
+<TextView
+    android:id="@id/jenis"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Jenis Tanaman Herbal:\n Daun Sirih"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/khasiat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/jenis"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:rotationX="10"
+        android:outlineAmbientShadowColor="@color/black">
+        <TextView
+            android:id="@id/khasiat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khasiat :\n1. Mencegah Diabetes \n2. Menurunkan Kolesterol \n3. Meningkatkan Kesehatan gigi dan mulut"/>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombolgray"
+        android:text="kembali"
+        app:layout_constraintTop_toBottomOf="@id/khasiat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombolijo"
+        android:text="simpan ke riwayat"
+        android:backgroundTint="#7BC93E"
+        app:layout_constraintTop_toBottomOf="@id/khasiat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        android:layout_marginBottom="40dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
